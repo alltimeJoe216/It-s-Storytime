@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "wallpaper_orange-white-gradient-linear-960x544-c2-fffaf0-ff4500-a-240-f-14.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
