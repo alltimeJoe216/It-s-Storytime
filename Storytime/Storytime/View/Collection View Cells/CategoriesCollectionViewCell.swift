@@ -7,7 +7,9 @@
 
 import UIKit
 
-class HPCollectionViewCell: UICollectionViewCell {
+class CategoriesCollectionViewCell: UICollectionViewCell {
+    
+    static let reuseIdentifier: String = "CategoryPageCell"
     
     @IBOutlet weak var categoryImage: UIImageView!
 

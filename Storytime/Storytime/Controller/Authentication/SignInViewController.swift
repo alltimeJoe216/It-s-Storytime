@@ -13,6 +13,7 @@ class SignInViewController: UIViewController {
 
     @IBOutlet var faceBookLoginButtonOutlet: UIButton!
     @IBOutlet var signInButtonOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         signInButtonOutlet.layer.cornerRadius = 25

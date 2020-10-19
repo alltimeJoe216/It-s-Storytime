@@ -19,8 +19,13 @@
 		BB463E102534C1CE00D30466 /* Mithella-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BB463E0F2534C1CE00D30466 /* Mithella-Bold.otf */; };
 		BB463E152534D14B00D30466 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB463E142534D14B00D30466 /* SignInViewController.swift */; };
 		BB463E20253513CF00D30466 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB463E1F253513CF00D30466 /* HomePage.storyboard */; };
-		BB463E26253514AA00D30466 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB463E25253514AA00D30466 /* HomePageViewController.swift */; };
-		BB463E2A253514C200D30466 /* HPCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB463E29253514C200D30466 /* HPCollectionViewCell.swift */; };
+		BB463E26253514AA00D30466 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB463E25253514AA00D30466 /* HomePageController.swift */; };
+		BB463E2A253514C200D30466 /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB463E29253514C200D30466 /* CategoriesCollectionViewCell.swift */; };
+		BB71EA79253CD31A00626526 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB71EA77253CD31A00626526 /* Extensions.swift */; };
+		BB71EA7A253CD31A00626526 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB71EA78253CD31A00626526 /* Utilities.swift */; };
+		BB767A10253CF73000650D2F /* PopularPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB767A0F253CF73000650D2F /* PopularPage.storyboard */; };
+		BB767A13253D04FE00650D2F /* PopularPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB767A12253D04FE00650D2F /* PopularPageController.swift */; };
+		BB767A17253D053C00650D2F /* PopularPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB767A16253D053C00650D2F /* PopularPageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +43,13 @@
 		BB463E0F2534C1CE00D30466 /* Mithella-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mithella-Bold.otf"; sourceTree = "<group>"; };
 		BB463E142534D14B00D30466 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BB463E1F253513CF00D30466 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
-		BB463E25253514AA00D30466 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		BB463E29253514C200D30466 /* HPCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB463E25253514AA00D30466 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		BB463E29253514C200D30466 /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB71EA77253CD31A00626526 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BB71EA78253CD31A00626526 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		BB767A0F253CF73000650D2F /* PopularPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopularPage.storyboard; sourceTree = "<group>"; };
+		BB767A12253D04FE00650D2F /* PopularPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPageController.swift; sourceTree = "<group>"; };
+		BB767A16253D053C00650D2F /* PopularPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB1076AB253BDB9F008DEE38 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BB463E142534D14B00D30466 /* SignInViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		BB463DD62534A86D00D30466 = {
 			isa = PBXGroup;
 			children = (
@@ -72,17 +90,13 @@
 		BB463DE12534A86D00D30466 /* Storytime */ = {
 			isa = PBXGroup;
 			children = (
-				BB463E122534D13700D30466 /* Features */,
 				BB463E002534A95B00D30466 /* App */,
+				BB463DFD2534A88300D30466 /* Controller */,
 				BB463DF72534A87500D30466 /* Models */,
 				BB463DFB2534A87F00D30466 /* View */,
 				BB463DFC2534A88100D30466 /* ViewModels */,
 				BB463DFF2534A8A600D30466 /* Utils */,
 				BB463DFE2534A88400D30466 /* API */,
-				BB463DFD2534A88300D30466 /* Controller */,
-				BB463E1F253513CF00D30466 /* HomePage.storyboard */,
-				BB463DE82534A86D00D30466 /* Main.storyboard */,
-				BB463DED2534A86E00D30466 /* LaunchScreen.storyboard */,
 				BB463DF02534A86E00D30466 /* Info.plist */,
 			);
 			path = Storytime;
@@ -98,6 +112,8 @@
 		BB463DFB2534A87F00D30466 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BB767A1A253D05C800650D2F /* Storyboards */,
+				BB767A1B253D05E300650D2F /* Collection View Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,6 +128,8 @@
 		BB463DFD2534A88300D30466 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BB767A19253D057D00650D2F /* Feature Scenes */,
+				BB1076AB253BDB9F008DEE38 /* Authentication */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +144,8 @@
 		BB463DFF2534A8A600D30466 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BB71EA77253CD31A00626526 /* Extensions.swift */,
+				BB71EA78253CD31A00626526 /* Utilities.swift */,
 				BB463E022534C13800D30466 /* Fonts */,
 			);
 			path = Utils;
@@ -153,30 +173,33 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		BB463E122534D13700D30466 /* Features */ = {
+		BB767A19253D057D00650D2F /* Feature Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BB463E242535148F00D30466 /* HomePageCategories */,
-				BB463E132534D13C00D30466 /* Main_Login */,
+				BB463E25253514AA00D30466 /* HomePageController.swift */,
+				BB767A12253D04FE00650D2F /* PopularPageController.swift */,
 			);
-			path = Features;
+			path = "Feature Scenes";
 			sourceTree = "<group>";
 		};
-		BB463E132534D13C00D30466 /* Main_Login */ = {
+		BB767A1A253D05C800650D2F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				BB463E142534D14B00D30466 /* SignInViewController.swift */,
+				BB767A0F253CF73000650D2F /* PopularPage.storyboard */,
+				BB463E1F253513CF00D30466 /* HomePage.storyboard */,
+				BB463DE82534A86D00D30466 /* Main.storyboard */,
+				BB463DED2534A86E00D30466 /* LaunchScreen.storyboard */,
 			);
-			path = Main_Login;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		BB463E242535148F00D30466 /* HomePageCategories */ = {
+		BB767A1B253D05E300650D2F /* Collection View Cells */ = {
 			isa = PBXGroup;
 			children = (
-				BB463E25253514AA00D30466 /* HomePageViewController.swift */,
-				BB463E29253514C200D30466 /* HPCollectionViewCell.swift */,
+				BB463E29253514C200D30466 /* CategoriesCollectionViewCell.swift */,
+				BB767A16253D053C00650D2F /* PopularPageCollectionViewCell.swift */,
 			);
-			path = HomePageCategories;
+			path = "Collection View Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +262,7 @@
 				BB463E072534C16C00D30466 /* GiveMeTheScoop-Regular.otf in Resources */,
 				BB463E0D2534C19100D30466 /* Mithella-Regular.otf in Resources */,
 				BB463E042534C14800D30466 /* AUBREY1__.TTF in Resources */,
+				BB767A10253CF73000650D2F /* PopularPage.storyboard in Resources */,
 				BB463DEF2534A86E00D30466 /* LaunchScreen.storyboard in Resources */,
 				BB463DEC2534A86E00D30466 /* Assets.xcassets in Resources */,
 				BB463DEA2534A86D00D30466 /* Main.storyboard in Resources */,
@@ -255,10 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB463E26253514AA00D30466 /* HomePageViewController.swift in Sources */,
+				BB463E26253514AA00D30466 /* HomePageController.swift in Sources */,
+				BB71EA79253CD31A00626526 /* Extensions.swift in Sources */,
+				BB767A13253D04FE00650D2F /* PopularPageController.swift in Sources */,
+				BB71EA7A253CD31A00626526 /* Utilities.swift in Sources */,
 				BB463E152534D14B00D30466 /* SignInViewController.swift in Sources */,
 				BB463DE32534A86D00D30466 /* AppDelegate.swift in Sources */,
-				BB463E2A253514C200D30466 /* HPCollectionViewCell.swift in Sources */,
+				BB463E2A253514C200D30466 /* CategoriesCollectionViewCell.swift in Sources */,
+				BB767A17253D053C00650D2F /* PopularPageCollectionViewCell.swift in Sources */,
 				BB463DE52534A86D00D30466 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

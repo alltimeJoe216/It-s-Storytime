@@ -7,8 +7,10 @@
 
 import UIKit
 
-class HomePageViewController: UICollectionViewController {
+class HomePageController: UICollectionViewController {
     
+    // MARK: - Properties
+    // Dummy Data
     var images: [UIImage] = [
         UIImage(named: "ActionPic")!,
         UIImage(named: "ComedyPic")!,
@@ -19,34 +21,59 @@ class HomePageViewController: UICollectionViewController {
         UIImage(named: "HorrorPic")!,
         UIImage(named: "SciFiPic")!
     ]
-//
-//    var categoryNames: [String] = [
-//        "History",
-//        "Action",
-//        "Drama",
-//        "Horror",
-//        "Fantasy",
-//        "Science Fiction",
-//        "War",
-//        "Detective",
-//        "Comedy",
-//        "Romance"
-//    ]
+    
+    let actionButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.tintColor = .white
+        button.setImage((UIImage(named: "plus_button")), for: .normal)
+        button.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
+        return button
+    }()
     
     
+    //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+        
+    }
+    
+    //MARK: - Helpers
+    
+    @objc func actionButtonTapped() {
+        print("Do some actions here (new story?)")
+    }
+    
+    func configureUI() {
+        
+        //CV DS&Delegate
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        // NavBar Attributes
         let img = UIImage(named: "gradient")
         navigationController?.navigationBar.setBackgroundImage(img, for: .default)
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
+        view.addSubview(actionButton)
+        actionButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingBottom: 64, paddingRight: 16, width: 56, height: 56)
+        
+        
     }
+    
+    //MARK: - Selectors
 }
 
-extension HomePageViewController {
+
+
+
+
+
+
+// MARK: - UICollectionViewDelegate
+
+extension HomePageController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images.count
     }
