@@ -138,7 +138,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="313"/>
                                         <connections>
-                                            <outlet property="storyBodyPreview" destination="YK0-U4-vWL" id="TY9-ZD-UJ5"/>
+                                            <outlet property="storyBodyPreview" destination="YK0-U4-vWL" id="WV0-g6-3Zc"/>
                                             <outlet property="storyImageView" destination="jcP-eI-GLw" id="gLo-dD-h9d"/>
                                             <outlet property="storyTitleLabel" destination="rFZ-2z-mYD" id="MzB-3C-r6F"/>
                                         </connections>

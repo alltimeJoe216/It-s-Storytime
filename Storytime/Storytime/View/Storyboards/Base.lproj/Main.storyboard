@@ -62,7 +62,7 @@
                                             <constraint firstAttribute="height" constant="55" id="JCg-Aq-90c"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Sign In" backgroundImage="gradient">
+                                        <state key="normal" title="Sign In" backgroundImage="gucci">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -111,6 +111,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" red="1" green="0.41224721864214708" blue="0.56383993618219075" alpha="0.81078767123287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.66199582820000002" green="0.3288625181" blue="0.53334999080000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
                         </subviews>
@@ -222,7 +223,7 @@
                                     <constraint firstAttribute="height" constant="55" id="dUZ-6U-Jfq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Sign Up" backgroundImage="gradient">
+                                <state key="normal" title="Sign Up" backgroundImage="gucci">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -259,7 +260,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gradient" width="960" height="544"/>
+        <image name="gucci" width="962" height="244"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
